@@ -1,0 +1,13 @@
+html,body {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+canvas {
+    border: 2px solid grey;
+}
+
+img {
+    display: none;
+}
