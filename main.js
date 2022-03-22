@@ -25,11 +25,11 @@ if (rainAmount <= 0) {
 window.addEventListener("load", rain);
 document.addEventListener("keydown", keydownHandler);
 
-// Loop program to rainAmount
-for (currentRain = 0; currentRain <= 98; currentRain++) {
-    rain();
-    console.log(currentRain);
-}
+// // Loop program to rainAmount
+// for (currentRain = 0; currentRain <= 98; currentRain++) {
+//     rain();
+//     console.log(currentRain);
+// }
 
 // Main program: rain
 requestAnimationFrame(rain);
@@ -39,7 +39,7 @@ function rain() {
     ctx.drawImage(rainDrop, rainX2, rainY, 50, 25);
     
     // update y value to make rain fall
-    rainY += 3;
+    rainY += 6;
 
     // if rain falls below screen reset at the top
     if (rainY >= 913) {
